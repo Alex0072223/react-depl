@@ -13,7 +13,6 @@ const ApiSpace = () => {
                 const articles = await  response.json();
 
                 setArticles(articles)
-
             }
 
             fetchData();
