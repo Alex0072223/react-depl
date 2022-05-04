@@ -6,7 +6,6 @@ function Testing(){
     return(
         <div className="Testing">
             <br/>
-            <Link className="aboutLink" to="/about" >About page placeholder</Link>
 
             <ApiSpace/>
 
