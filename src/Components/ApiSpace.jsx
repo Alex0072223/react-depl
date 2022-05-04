@@ -36,11 +36,13 @@ const ApiSpace = () => {
                         <br/>
                             <span>Номер космической новости: {article.id}      </span>
                         <br/>
-                            <span>       {article.title}</span>
+                          <h1>  <span>       {article.title}</span> </h1>
                         <br/>
                             <img className="imgs" src={article.imageUrl}/>
                         <br/>
                             <span>{article.summary}</span>
+                        <br/>
+                        <span>Дата публикации:  {article.publishedAt}</span>
                         <br/>
                             <button className="button_1"><a href={article.url}>Ссылка на статью</a></button>
 
