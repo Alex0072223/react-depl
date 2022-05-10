@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './ApiSpace.css'
+import {Link} from "react-router-dom";
 
 const ApiSpace = () => {
 
@@ -20,9 +21,6 @@ const ApiSpace = () => {
 
         }, []);
 
-
-
-
     return (
         <div>
             <h2>Placeholder </h2>
@@ -34,6 +32,10 @@ const ApiSpace = () => {
                         <br/>
                             <span>Номер космической новости: {article.id}      </span>
                         <br/>
+                                <Link to={`/news/${article.id}`}>
+                                    <h1><span>{article.title}</span></h1>
+                                </Link>
+                            <br/>
                           <h1>  <span>       {article.title}</span> </h1>
                         <br/>
                             <img className="imgs" src={article.imageUrl}/>
