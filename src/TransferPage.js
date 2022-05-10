@@ -10,7 +10,9 @@ const TransferPage = () => {
             <p>
                 <Link className="aboutLink" to="/about" >About page placeholder</Link>
                 <br/>
-                <Link className="newsLink" to="/testing" >news test page placeholder</Link>
+                <Link className="newsLink" to="/news" >news test page placeholder</Link>
+                <br/>
+                <Link className="sortLink" to="/sort"> sorted By Id news</Link>
             </p>
 
         </div>
