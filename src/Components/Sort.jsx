@@ -22,6 +22,8 @@ const Sort = () => {
 
     return (
         <div>
+            <button ><a href='/transfer'>На главную (Transfer page)</a></button> {/*TODO: накинуть стили*/}
+            <button ><a href='/'>Назад</a></button> {/*TODO: накинуть стили*/}
             <h2>Placeholder </h2>
             {
                 articles.map(article=>(

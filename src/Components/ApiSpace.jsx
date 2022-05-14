@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './ApiSpace.css'
 import {Link} from "react-router-dom";
+import TransferPage from "../TransferPage";
 
 const ApiSpace = () => {
 
@@ -23,12 +24,23 @@ const ApiSpace = () => {
 
     return (
         <div>
+
+
+            <button ><a href='/transfer'>На главную (Transfer page)</a></button> {/*TODO: накинуть стили*/}
+
+            <button>                                                             {/*TODO: накинуть стили*/}
+                <Link to={'/sort'}>
+                    <h5>Сортировка по id</h5>
+                </Link>
+            </button>
             <h2>Placeholder </h2>
+
+
+
 
             {
                 articles.map(article=>(
                     <div className="article">
-
                         <br/>
                             <span>Номер космической новости: {article.id}      </span>
                         <br/>
@@ -36,7 +48,7 @@ const ApiSpace = () => {
                                     <h1><span>{article.title}</span></h1>
                                 </Link>
                             <br/>
-                          <h1>  <span>       {article.title}</span> </h1>
+
                         <br/>
                             <img className="imgs" src={article.imageUrl}/>
                         <br/>

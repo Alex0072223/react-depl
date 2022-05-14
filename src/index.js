@@ -1,26 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes,Outlet, Navigate} from "react-router-dom";
 import About from "./Components/About";
 import Testing from "./Testing";
-import MainPage from "./TransferPage";
 import TransferPage from "./TransferPage";
 import NewsItem from "./Components/NewsItem";
 import Sorted from "./Sorted";
+import Error from "./Error";
+import Pag from "./Pag";
+
+// TODO: Сделать кнпку сортировки на news + кнопка на transferPage...
+// TODO: Добавить в :id похожие новости (3, параметр )
+// TODO: Накинуть стили
+// <Route path="/" element={<TransferPage />}/>
 
 ReactDOM.render(
 
     <BrowserRouter>
         <Routes>
 
-            <Route path="/" element={<TransferPage />}/>
-            <Route path="/news/:iddd" element={<NewsItem />}/>
+            <Route path="/" element={<Navigate to="/news" />}/> {/*Redirect*/}
+            <Route path='news' element={<Outlet />}/>
+                   <Route index element={<Testing/>}/>
+                       <Route path="/news/:iddd" element={<NewsItem />}/>
+            <Route/>
+
             <Route path="news" element={<Testing />}/>
             <Route path="about" element={<About />}/>
             <Route path="sort" element={<Sorted />}/>
+            <Route path="transfer" element={<TransferPage />}/>
+            <Route path="pag" element={<Pag />}/>
 
-            <Route path="*" element={<Testing />}/> {/*redirect to news if usever use wrong url*/}
+            <Route path="*" element={<Error />}/> {/*redirect to news if usever use wrong url*/}
 
         </Routes>
     </BrowserRouter>,
