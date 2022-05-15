@@ -7,7 +7,7 @@ function Testing(){
         <div className="Testing">
             <br/>
 
-            <ApiSpace/>
+            <ApiSpace />
 
         </div>
 

@@ -8,6 +8,7 @@ import NewsItem from "./Components/NewsItem";
 import Sorted from "./Sorted";
 import Error from "./Error";
 import Pag from "./Pag";
+import FilterAndFav from "./FilterAndFav";
 
 // TODO: Сделать кнпку сортировки на news + кнопка на transferPage...
 // TODO: Добавить в :id похожие новости (3, параметр )
@@ -30,6 +31,7 @@ ReactDOM.render(
             <Route path="sort" element={<Sorted />}/>
             <Route path="transfer" element={<TransferPage />}/>
             <Route path="pag" element={<Pag />}/>
+            <Route path="filter" element={<FilterAndFav />}/>
 
             <Route path="*" element={<Error />}/> {/*redirect to news if usever use wrong url*/}
 

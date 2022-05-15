@@ -23,7 +23,12 @@ const ApiSpace = () => {
 
         }, []);
 
+
+
     return (
+
+
+
         <div>
             <ul>
                 <li><Link to={'/transfer'}><h5>На главную (Transfer page)</h5></Link></li>
@@ -31,6 +36,7 @@ const ApiSpace = () => {
             </ul>
 
             <h2>Placeholder </h2>
+            <script> </script>
 
 
 
