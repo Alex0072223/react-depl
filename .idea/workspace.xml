@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eecc6ba-7d35-408f-9c9f-f6d34c396a14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FilterAndFav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/untitled1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ApiSpace.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ApiSpace.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pag.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Testing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TransferPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TransferPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652635800753</updated>
       <workItem from="1652635802779" duration="4394000" />
-      <workItem from="1652640679857" duration="351000" />
+      <workItem from="1652640679857" duration="1029000" />
     </task>
     <servers />
   </component>
