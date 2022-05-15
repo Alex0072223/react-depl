@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './ApiSpace.css'
+import './style.css'
 import {Link} from "react-router-dom";
 import TransferPage from "../TransferPage";
 
@@ -24,15 +25,11 @@ const ApiSpace = () => {
 
     return (
         <div>
+            <ul>
+                <li><Link to={'/transfer'}><h5>На главную (Transfer page)</h5></Link></li>
+                <li><Link to={'/sort'}><h5>Сортировка по id</h5></Link></li>
+            </ul>
 
-
-            <button ><a href='/transfer'>На главную (Transfer page)</a></button> {/*TODO: накинуть стили*/}
-
-            <button>                                                             {/*TODO: накинуть стили*/}
-                <Link to={'/sort'}>
-                    <h5>Сортировка по id</h5>
-                </Link>
-            </button>
             <h2>Placeholder </h2>
 
 

@@ -39,10 +39,13 @@ const NewsItem = () => {
                     <div>
 
                         <br/>
-                        <span>Номер космической новости: {articlesSame.id - 1}</span>
-
+                             <span>Номер космической новости: {articlesSame.id - 1}</span>
                         <br/>
                         <h1>  <span>  {articlesSame.title }</span> </h1> {/*TODO: придумать как сдвинуть title*/}
+                        <br/>
+                        <img className="imgs" src={articlesSame.imageUrl}/>
+                        <br/>
+
 
                     </div>
 

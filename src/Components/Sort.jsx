@@ -22,9 +22,11 @@ const Sort = () => {
 
     return (
         <div>
-            <button ><a href='/transfer'>На главную (Transfer page)</a></button> {/*TODO: накинуть стили*/}
-            <button ><a href='/'>Назад</a></button> {/*TODO: накинуть стили*/}
-            <h2>Placeholder </h2>
+            <ul>
+                <li><Link to={'/transfer'}><h5>На главную (Transfer page)</h5></Link></li>
+                <li><Link to={'/'}><h5>Назад</h5></Link></li>
+            </ul>
+            <h2>Новости отсортированные по id </h2>
             {
                 articles.map(article=>(
                     <div className="article">

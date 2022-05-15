@@ -6,7 +6,7 @@ const About = () => {
             <div>
                 <h1> About page here!</h1>
                 <p>
-                    Spalme text Spalme text Spalme text Spalme text Spalme text Spalme text
+                    3-rd year student of PSUTI
                 </p>
 
             </div>

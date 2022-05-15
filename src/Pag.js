@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import NewsPag from "./Components/NewsPag";
 import Pagination from "./Components/Pagination";
+import {Link} from "react-router-dom";
 
 function Pag(){
     const [news, setNews] = useState([])
@@ -11,7 +12,7 @@ function Pag(){
     useEffect(()=>{
         const fetchData = async () => {
             setLoading(true)
-            const response = await  fetch('https://api.spaceflightnewsapi.net/v3/articles?_limit=60');
+            const response = await  fetch('https://api.spaceflightnewsapi.net/v3/articles?_limit=200');
             const articles = await  response.json();
             setNews(articles)
             setLoading(false)
@@ -35,7 +36,12 @@ function Pag(){
 
     return(
         <div className="container mt-5">
-            <h1>CC</h1>
+            <ul>
+                <li><Link to={'/transfer'}><h5>На главную (Transfer page)</h5></Link></li>
+                <li><Link to={'/sort'}><h5>Сортировка по id</h5></Link></li>
+                <li><Link to={'/'}><h5>Новости</h5></Link></li>
+            </ul>
+            <h1>Новости с пагинацией</h1>
             <NewsPag news={currentNews} loading={loading}/>
             <Pagination newsPerPage={newsPerPage} totalNews={news.length} paginate={paginate}/>
         </div>
